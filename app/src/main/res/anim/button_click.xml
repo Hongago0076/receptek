@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="150"
+    android:fromXScale="1.0"
+    android:fromYScale="1.0"
+    android:toXScale="0.85"
+    android:toYScale="0.85">
+    <set xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Gomb összenyomása -->
+        <scale
+            android:duration="80"
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.85"
+            android:toYScale="0.85"/>
+
+        <!-- Gomb "felugrik" egy picit -->
+        <scale
+            android:duration="60"
+            android:fromXScale="0.85"
+            android:fromYScale="0.85"
+            android:toXScale="1.15"
+            android:toYScale="1.15"/>
+
+        <!-- Gomb visszaáll a normál állapotba -->
+        <scale
+            android:duration="80"
+            android:fromXScale="1.15"
+            android:fromYScale="1.15"
+            android:toXScale="1.0"
+            android:toYScale="1.0"/>
+    </set>
+</scale>
