@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:text="Vissza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Recept neve"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/backBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/detailIngredients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hozzávalók"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/detailName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/detailInstructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Elkészítés"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/detailIngredients"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
