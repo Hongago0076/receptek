@@ -1,0 +1,1 @@
+Recept kezelő alkalmazás
